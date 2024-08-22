@@ -9,3 +9,24 @@ cards:
   onCallSupport:
     - (412) 419-3491
     - (915) 382-1932
+
+spring:
+  database:
+    driverClassName:  org.postgresql.Driver
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/cardsdb
+    username: "postgres"
+    password: "p@ssw0rd"
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming-strategy:  org.hibernate.cfg.ImprovedNamingStrategy
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        dialect:  org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  sql:
+    init:
+      mode: always

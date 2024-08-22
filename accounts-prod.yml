@@ -9,3 +9,24 @@ accounts:
   onCallSupport:
     - (453) 392-4829
     - (236) 203-0384
+
+spring:
+  database:
+    driverClassName:  org.postgresql.Driver
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/accountsdb
+    username: "postgres"
+    password: "p@ssw0rd"
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming-strategy:  org.hibernate.cfg.ImprovedNamingStrategy
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        dialect:  org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  sql:
+    init:
+      mode: always
