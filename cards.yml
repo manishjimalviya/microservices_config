@@ -15,7 +15,7 @@ spring:
     driverClassName:  org.postgresql.Driver
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/cardsdb
+    url: jdbc:postgresql://localhost:5433/cardsdb
     username: "postgres"
     password: "p@ssw0rd"
   jpa:
